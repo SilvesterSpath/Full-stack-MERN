@@ -67,7 +67,7 @@ button {
   color: #aaa;
   cursor: pointer;
   font-size: 16px;
-  padding: 15px;
+  padding: 10px;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -89,13 +89,13 @@ button:focus {
 .slider-container .action-buttons .down-button {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 0px;
-  transform: translate(-100%, -100%);
+  transform: translate(0%, -100%);
 }
 
 .slider-container .action-buttons .up-button {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 0px;
-  transform: translate(-100%, 0%);
+  transform: translate(0%, 0%);
 }
 
 .visit-container {
