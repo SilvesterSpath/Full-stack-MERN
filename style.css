@@ -97,3 +97,19 @@ button:focus {
   border-top-left-radius: 0px;
   transform: translate(-100%, 0%);
 }
+
+.visit-container {
+  padding: 10px;
+}
+
+.visit {
+  color: rgb(185, 185, 185);
+  text-decoration: none;
+  background: linear-gradient(to top, #ffeacb 50%, transparent 50%);
+  transition: background 0.3s ease-in;
+}
+
+.visit:hover {
+  color: rgb(68, 68, 68);
+  background: linear-gradient(to top, #fbdaaa 100%, #dfe8f3 10%);
+}
