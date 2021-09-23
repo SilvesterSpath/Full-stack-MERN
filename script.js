@@ -10,8 +10,8 @@ let activeSlideIndex = 0;
 // This is the starting position
 sliderLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
 sliderRight.style.top = `-${activeSlideIndex * 100}vh`;
-/* downButton.style.opacity = 0;
-downButton.style.visibility = 'hidden'; */
+downButton.style.opacity = 0;
+downButton.style.visibility = 'hidden';
 upButton.style.borderTopLeftRadius = '5px';
 
 console.log(
@@ -52,26 +52,26 @@ function changeSlide(string) {
   if (activeSlideIndex === 2) {
     upButton.style.visibility = 'hidden';
     upButton.style.opacity = 0;
-    /* downButton.style.borderBottomLeftRadius = '5px'; */
+    downButton.style.borderBottomLeftRadius = '5px';
   } else {
     upButton.style.opacity = 1;
     upButton.style.visibility = 'visible';
-    /* downButton.style.borderBottomLeftRadius = '0px'; */
+    downButton.style.borderBottomLeftRadius = '0px';
   }
   if (activeSlideIndex === 0) {
-    /* downButton.style.visibility = 'hidden';
-    downButton.style.opacity = 0; */
+    downButton.style.visibility = 'hidden';
+    downButton.style.opacity = 0;
     upButton.style.borderTopLeftRadius = '5px';
   } else {
-    /* downButton.style.opacity = 1;
-    downButton.style.visibility = 'visible'; */
+    downButton.style.opacity = 1;
+    downButton.style.visibility = 'visible';
     upButton.style.borderTopLeftRadius = '0px';
   }
 }
 
 // Event listeners
 upButton.addEventListener('click', () => changeSlide('up'));
-/* downButton.addEventListener('click', () => changeSlide('down')); */
+downButton.addEventListener('click', () => changeSlide('down'));
 
 /* // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
 sliderContainer.addEventListener(
